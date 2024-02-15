@@ -17,7 +17,11 @@ export class AuthService {
     console.log(user);
     if (user) return user;
     console.log('User not found. Creating...');
-    const newUser = this.userRepository.create(details);
+    const newUser = this.userRepository.create({
+      email: details.email,
+      displayName: details.displayName,
+      role: 'new',
+    });
     return this.userRepository.save(newUser);
   }
 
