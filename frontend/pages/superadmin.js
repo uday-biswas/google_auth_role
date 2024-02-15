@@ -36,7 +36,7 @@ const SuperAdminPage = () => {
     const handleDelete = async (id) => {
       try {
         const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/categories/superadmin/${id}`, {
-          method: 'POST',
+          method: 'DELETE',
         });
         if (response.ok) {
           fetchCategories(); // Refresh the categories after deletion

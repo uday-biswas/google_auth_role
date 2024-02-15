@@ -16,7 +16,7 @@ export class CategoryController {
         return await this.categoryService.updateCategory(id, role, category.name, category.description);
     }
 
-    @Post(':role/:id')
+    @Delete(':role/:id')
     async deleteCategory(@Param('id') id: number, @Param('role') role: string): Promise<any> {
         return await this.categoryService.deleteCategory(id, role);
     }

@@ -70,7 +70,7 @@ const AdminPage = () => {
 
     const handleCreate = async () => {
         try {
-          const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/categories/superadmin`, {
+          const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/categories/admin`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

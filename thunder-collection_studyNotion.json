@@ -1,0 +1,1004 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "studyNotion",
+    "dateExported": "2024-02-15T01:56:04.008Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "c3cfa4af-42b2-4e36-9cc6-80cc56b5fe3c",
+            "name": "authentication",
+            "containerId": "",
+            "created": "2023-12-17T06:22:46.580Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "course",
+            "containerId": "",
+            "created": "2023-12-17T06:22:46.581Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "27eb5fb4-178b-44e5-a4db-3dc7b8db7182",
+            "name": "profile",
+            "containerId": "",
+            "created": "2023-12-17T06:22:46.582Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "057eb329-c53d-4cb8-b3f4-79230f1b2bd3",
+            "name": "payment",
+            "containerId": "",
+            "created": "2023-12-17T06:22:46.583Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "1db5b8b0-bad2-4f6e-87b8-1a09ee054fee",
+            "name": "rating",
+            "containerId": "",
+            "created": "2023-12-17T06:22:46.584Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "f59b32be-2bf1-4e47-becc-82cb3d608f45",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "c3cfa4af-42b2-4e36-9cc6-80cc56b5fe3c",
+            "name": "sendOtp",
+            "url": "http://localhost:3000/api/categories",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-12-17T06:22:46.580Z",
+            "modified": "2024-02-14T17:35:18.365Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n     \"name\": \"we\",\n     \"description\": \"its future\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0288b749-d647-40d2-8bdd-14d811efb370",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "c3cfa4af-42b2-4e36-9cc6-80cc56b5fe3c",
+            "name": "signUp",
+            "url": "http://localhost:4000/api/v1/auth/signUp",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-12-17T06:22:46.581Z",
+            "modified": "2023-12-17T19:29:52.443Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"firstName\":\"aman\",\n    \"lastName\":\"kumar\",\n    \"password\":\"Rjhytxc8vr@\",\n    \"confirmPassword\":\"Rjhytxc8vr@\",\n    \"email\":\"udaybiswasofficial@gmail.com\",\n    \"accountType\":\"admin\",\n    \"otp\": \"911050\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d14b3bba-c5fb-4dc1-9156-3e547dcf5fc4",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "c3cfa4af-42b2-4e36-9cc6-80cc56b5fe3c",
+            "name": "login",
+            "url": "http://localhost:4000/api/v1/auth/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-12-17T06:22:46.582Z",
+            "modified": "2023-12-17T19:30:23.876Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"email\":\"udaybiswasofficial@gmail.com\",\n    \"password\":\"Rjhytxc8vr@\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a59184e7-d333-454f-bccf-e53059758d72",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "c3cfa4af-42b2-4e36-9cc6-80cc56b5fe3c",
+            "name": "changePassword",
+            "url": "http://localhost:4000/api/v1/auth/changePassword",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-12-17T06:22:46.583Z",
+            "modified": "2023-12-17T06:22:46.583Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"oldPassword\": \"123456\",\n  \"newPassword\": \"12345\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8d1831c1-1e5c-4ea7-9170-06f494e02fda",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "c3cfa4af-42b2-4e36-9cc6-80cc56b5fe3c",
+            "name": "resetPasswordToken",
+            "url": "http://localhost:4000/api/v1/auth/reset-password-token",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-12-17T06:22:46.584Z",
+            "modified": "2023-12-17T06:50:48.747Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"ub828063447@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f809e55f-6133-4f17-bf59-c4fdd19a343b",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "c3cfa4af-42b2-4e36-9cc6-80cc56b5fe3c",
+            "name": "reset-password",
+            "url": "http://localhost:4000/api/v1/auth/reset-password",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-12-17T06:22:46.585Z",
+            "modified": "2023-12-17T06:54:01.187Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\": \"123456\",\n  \"confirmPassword\": \"123456\",\n  \"token\": \"cfcbc0e2-0ebc-4245-9d8d-9072f781a1eb\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "352a6ebd-21ea-4fd2-8dba-5f760808ebf3",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "createCourse",
+            "url": "http://localhost:4000/api/v1/course/createCourse",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-12-17T06:22:46.586Z",
+            "modified": "2023-12-17T06:22:46.586Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "courseName",
+                        "value": "backend dev"
+                    },
+                    {
+                        "name": "courseDescription",
+                        "value": "master nodejs, expressjs, and mongodb"
+                    },
+                    {
+                        "name": "price",
+                        "value": "499"
+                    },
+                    {
+                        "name": "category",
+                        "value": "6547c005546b952ecdd8b57c"
+                    },
+                    {
+                        "name": "whatYouWillLearn",
+                        "value": "sdfadffjffnkwf"
+                    },
+                    {
+                        "name": "tag",
+                        "value": "[\"1\",\"2\",\"3\",\"4\"]"
+                    },
+                    {
+                        "name": "instructions",
+                        "value": "[\"a\",\"b\",\"c\",\"d\"]"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "thumbnailImage",
+                        "value": "d:\\Downloads\\plyometric_pushup.webp"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "81663dec-4ff6-4b8e-b544-3698e0ec381f",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "createCategory",
+            "url": "http://localhost:4000/api/v1/course/createCategory",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-12-17T06:22:46.587Z",
+            "modified": "2023-12-17T19:31:36.824Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"machine learning\",\n  \"description\": \"learn machine learning\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e9f18c06-f57f-4e8b-807d-d132e3ed396a",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "showAllCategories",
+            "url": "http://localhost:4000/api/v1/course/showAllCategories",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-12-17T06:22:46.588Z",
+            "modified": "2023-12-17T06:22:46.588Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a95e8df6-18b7-414b-9b20-6cdeb086b290",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "27eb5fb4-178b-44e5-a4db-3dc7b8db7182",
+            "name": "updateProfile",
+            "url": "http://localhost:4000/api/v1/profile/updateProfile",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2023-12-17T06:22:46.589Z",
+            "modified": "2023-12-17T06:22:46.589Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"firstName\": \"amlan\",\n    \"lastName\": \"anupam\",\n    \"about\": \"Hello, my name is Saikat and I am a DEV. I have 3 years of experience in Backend Developement and specialize in Authentication and Authorization. I am passionate about Cloud and have worked on Studynotion. Please feel free to contact me for any inquiries or collaborations!\",\n    \"contactNumber\": 125648959,\n    \"gender\": \"male\",\n    \"dateOfBirth\": \"2002-06-10\" \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8eb214fd-827b-40e1-bd10-60a1a1e061a4",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "27eb5fb4-178b-44e5-a4db-3dc7b8db7182",
+            "name": "getUserDetails",
+            "url": "http://localhost:4000/api/v1/profile/getUserDetails",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2023-12-17T06:22:46.590Z",
+            "modified": "2023-12-17T06:58:55.401Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fba54852-fa29-4c3e-9570-89e0b0dd6d8f",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "27eb5fb4-178b-44e5-a4db-3dc7b8db7182",
+            "name": "deleteAccount",
+            "url": "http://localhost:4000/api/v1/profile/deleteAccount",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2023-12-17T06:22:46.591Z",
+            "modified": "2023-12-17T06:22:46.591Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "18fc7f19-1e92-4ab2-b3ed-4f58397efcc7",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "27eb5fb4-178b-44e5-a4db-3dc7b8db7182",
+            "name": "updateDisplayPicture",
+            "url": "http://localhost:4000/api/v1/profile/updateDisplayPicture",
+            "method": "PUT",
+            "sortNum": 140000,
+            "created": "2023-12-17T06:22:46.592Z",
+            "modified": "2023-12-17T06:22:46.592Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "displayPicture",
+                        "value": "d:\\Downloads\\hip_flexor.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "16887c43-001e-4d5b-8892-159d33f36a1a",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "editCourse",
+            "url": "http://localhost:4000/api/v1/course/editCourse",
+            "method": "POST",
+            "sortNum": 150000,
+            "created": "2023-12-17T06:22:46.593Z",
+            "modified": "2023-12-17T06:22:46.593Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "courseName",
+                        "value": "mern stack master"
+                    },
+                    {
+                        "name": "courseDescription",
+                        "value": "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!"
+                    },
+                    {
+                        "name": "price",
+                        "value": "499"
+                    },
+                    {
+                        "name": "category",
+                        "value": "6546b3830d8820399bad2ad8"
+                    },
+                    {
+                        "name": "whatYouWillLearn",
+                        "value": "ghsddghgohh"
+                    },
+                    {
+                        "name": "tag",
+                        "value": "[\"1\",\"2\",\"3\",\"4\"]"
+                    },
+                    {
+                        "name": "instructions",
+                        "value": "[\"a\",\"b\",\"c\",\"d\"]"
+                    },
+                    {
+                        "name": "courseId",
+                        "value": "65475bf703e73b8a0cafb6fc"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "thumbnailImage",
+                        "value": "d:\\Downloads\\childs_pose.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "93899243-f442-43f6-b375-c230fc272c59",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "deleteCourse",
+            "url": "http://localhost:4000/api/v1/course/deleteCourse",
+            "method": "DELETE",
+            "sortNum": 160000,
+            "created": "2023-12-17T06:22:46.594Z",
+            "modified": "2023-12-17T06:22:46.594Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "courseId",
+                        "value": "654809c3546b952ecdd8b5f5"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5734e5d9-f510-4ae8-905e-aaab5a6235f7",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "getInstructorCourses",
+            "url": "http://localhost:4000/api/v1/course/getInstructorCourses",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2023-12-17T06:22:46.595Z",
+            "modified": "2023-12-17T06:22:46.595Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bc41ef44-9ac2-4fb7-8a1c-e4c38af04153",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "27eb5fb4-178b-44e5-a4db-3dc7b8db7182",
+            "name": "instructorDashboard",
+            "url": "http://localhost:4000/api/v1/profile/instructorDashboard",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2023-12-17T06:22:46.596Z",
+            "modified": "2023-12-17T06:22:46.596Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1d8d2dbc-80ec-4fc2-a9f4-42c4937cded2",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "get published courses",
+            "url": "http://localhost:4000/api/v1/course/getAllCourses",
+            "method": "GET",
+            "sortNum": 190000,
+            "created": "2023-12-17T06:22:46.597Z",
+            "modified": "2023-12-17T06:22:46.597Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ab81b1e1-dc75-4228-b3be-4aa51e5ff7fc",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "create section",
+            "url": "http://localhost:4000/api/v1/course/createSection",
+            "method": "POST",
+            "sortNum": 210000,
+            "created": "2023-12-17T06:22:46.598Z",
+            "modified": "2023-12-17T06:22:46.598Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "courseId",
+                        "value": "65480a41a9af052255265ea6"
+                    },
+                    {
+                        "name": "sectionName",
+                        "value": "mongodb handling"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "77bd26fa-60be-4fd6-95db-15170cde117e",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "update section",
+            "url": "http://localhost:4000/api/v1/course/updateSection",
+            "method": "POST",
+            "sortNum": 220000,
+            "created": "2023-12-17T06:22:46.599Z",
+            "modified": "2023-12-17T06:22:46.599Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "sectionId",
+                        "value": "654770ada3d3e544bc535147"
+                    },
+                    {
+                        "name": "sectionName",
+                        "value": "Html part 1"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "276c7061-2bbe-4b1a-b070-527c5899f302",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "create subsection",
+            "url": "http://localhost:4000/api/v1/course/addSubSection",
+            "method": "POST",
+            "sortNum": 230000,
+            "created": "2023-12-17T06:22:46.600Z",
+            "modified": "2023-12-17T11:46:08.460Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "sectionId",
+                        "value": "657ebe6eb421b1cc6d56eb70"
+                    },
+                    {
+                        "name": "title",
+                        "value": "learn html beginner part 1"
+                    },
+                    {
+                        "name": "description",
+                        "value": "in this video , we will learn about html in beginner friendly manner."
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "video",
+                        "value": "c:\\Users\\ub828\\Videos\\Captures\\windows_secret.mp4"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "921cbf86-e0d5-44f7-80c2-c8134bc30cff",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "update subSection",
+            "url": "http://localhost:4000/api/v1/course/updateSubSection",
+            "method": "POST",
+            "sortNum": 240000,
+            "created": "2023-12-17T06:22:46.601Z",
+            "modified": "2023-12-17T06:22:46.601Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "subSectionId",
+                        "value": "654781b139a21c86667b8631"
+                    },
+                    {
+                        "name": "timeDuration",
+                        "value": "13"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "16d7179f-e78d-421a-90c7-59a97c2182b0",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "deleteSubSection",
+            "url": "http://localhost:4000/api/v1/course/deleteSubSection",
+            "method": "POST",
+            "sortNum": 250000,
+            "created": "2023-12-17T06:22:46.602Z",
+            "modified": "2023-12-17T06:22:46.602Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "subSectionId",
+                        "value": "654781b139a21c86667b8631"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "584c8818-b9f1-4dd6-a4b3-16fd6135541e",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "deleteSection",
+            "url": "http://localhost:4000/api/v1/course/deleteSection",
+            "method": "POST",
+            "sortNum": 260000,
+            "created": "2023-12-17T06:22:46.603Z",
+            "modified": "2023-12-17T06:22:46.603Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "sectionId",
+                        "value": "654770ada3d3e544bc535147"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "49d0e559-0bcc-4096-86bc-2788646d4360",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "get course details for new user",
+            "url": "http://localhost:4000/api/v1/course/getCourseDetails",
+            "method": "POST",
+            "sortNum": 270000,
+            "created": "2023-12-17T06:22:46.605Z",
+            "modified": "2023-12-17T06:22:46.605Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "courseId",
+                        "value": "65480a41a9af052255265ea6"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "a0336380-2f1c-4c73-8b5a-18150c94fecf",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "057eb329-c53d-4cb8-b3f4-79230f1b2bd3",
+            "name": "capture payment",
+            "url": "http://localhost:4000/api/v1/payment/capturePayment",
+            "method": "POST",
+            "sortNum": 280000,
+            "created": "2023-12-17T06:22:46.606Z",
+            "modified": "2023-12-17T12:16:53.151Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "courses",
+                        "value": "['657ebe09b421b1cc6d56eb6c']"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "79b8ebc3-827d-4a9d-97af-6ee6db099c73",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "057eb329-c53d-4cb8-b3f4-79230f1b2bd3",
+            "name": "verify payment",
+            "url": "",
+            "method": "GET",
+            "sortNum": 290000,
+            "created": "2023-12-17T06:22:46.607Z",
+            "modified": "2023-12-17T06:22:46.607Z",
+            "headers": []
+        },
+        {
+            "_id": "3d7924e9-670b-4f84-be28-2504bd62b2ea",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "057eb329-c53d-4cb8-b3f4-79230f1b2bd3",
+            "name": "enroll the student",
+            "url": "http://localhost:4000/api/v1/payment/enroll",
+            "method": "POST",
+            "sortNum": 300000,
+            "created": "2023-12-17T06:22:46.608Z",
+            "modified": "2023-12-17T06:22:46.608Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "courses",
+                        "value": "[\"65480a41a9af052255265ea6\"]"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "820077b3-23e6-450d-9fa2-88888435b182",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "057eb329-c53d-4cb8-b3f4-79230f1b2bd3",
+            "name": "leave the course",
+            "url": "http://localhost:4000/api/v1/payment/leave",
+            "method": "POST",
+            "sortNum": 320000,
+            "created": "2023-12-17T06:22:46.609Z",
+            "modified": "2023-12-17T06:22:46.609Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "courseId",
+                        "value": "6547f678546b952ecdd8b59d"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "30e3e1bc-eceb-4adc-b2bc-9e03049246d2",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "publish the course",
+            "url": "http://localhost:4000/api/v1/course/publishCourse",
+            "method": "POST",
+            "sortNum": 330000,
+            "created": "2023-12-17T06:22:46.610Z",
+            "modified": "2023-12-17T06:22:46.610Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "courseId",
+                        "value": "65480a41a9af052255265ea6"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "92050905-718d-4529-ab7f-18f2e5912878",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "get all published courses",
+            "url": "http://localhost:4000/api/v1/course/getAllCourses",
+            "method": "GET",
+            "sortNum": 340000,
+            "created": "2023-12-17T06:22:46.611Z",
+            "modified": "2023-12-17T06:22:46.611Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e9f45cdf-7569-4f3f-aa9b-119688e3bad0",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "get category page details",
+            "url": "http://localhost:4000/api/v1/course/getCategoryPageDetails",
+            "method": "POST",
+            "sortNum": 350000,
+            "created": "2023-12-17T06:22:46.612Z",
+            "modified": "2023-12-17T06:22:46.612Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "categoryId",
+                        "value": "6546b3830d8820399bad2ad8"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f50dd877-38ff-444d-a997-444930b42961",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "create rating",
+            "url": "http://localhost:4000/api/v1/course/createRating",
+            "method": "POST",
+            "sortNum": 360000,
+            "created": "2023-12-17T06:22:46.613Z",
+            "modified": "2023-12-17T06:22:46.613Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "rating",
+                        "value": "4"
+                    },
+                    {
+                        "name": "review",
+                        "value": "nice course, very well taught"
+                    },
+                    {
+                        "name": "courseId",
+                        "value": "65480a41a9af052255265ea6"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "4622c0e9-cef3-4100-a75e-e07f698e7477",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "get average rating",
+            "url": "http://localhost:4000/api/v1/course/getAverageRating",
+            "method": "POST",
+            "sortNum": 370000,
+            "created": "2023-12-17T06:22:46.614Z",
+            "modified": "2023-12-17T06:22:46.614Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "courseId",
+                        "value": "65480a41a9af052255265ea6"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "31173956-4feb-4434-a630-6fbc109d6230",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "get all rating",
+            "url": "http://localhost:4000/api/v1/course/getReviews",
+            "method": "GET",
+            "sortNum": 380000,
+            "created": "2023-12-17T06:22:46.615Z",
+            "modified": "2023-12-17T06:22:46.615Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4dc0ad35-7e97-4cdf-bd3e-c9f7a51616fe",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "update Rating",
+            "url": "http://localhost:4000/api/v1/course/updateRating",
+            "method": "POST",
+            "sortNum": 390000,
+            "created": "2023-12-17T06:22:46.616Z",
+            "modified": "2023-12-17T06:22:46.616Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "courseId",
+                        "value": "65480a41a9af052255265ea6"
+                    },
+                    {
+                        "name": "rating",
+                        "value": "3"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "77a43dc5-189f-497a-94e2-4871c157568b",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "",
+            "name": "contact us",
+            "url": "http://localhost:4000/api/v1/reach/contact",
+            "method": "POST",
+            "sortNum": 400000,
+            "created": "2023-12-17T06:22:46.617Z",
+            "modified": "2023-12-17T06:22:46.617Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "countrycode",
+                        "value": "91"
+                    },
+                    {
+                        "name": "email",
+                        "value": "ub8280634471@gmail.com"
+                    },
+                    {
+                        "name": "firstname",
+                        "value": "uday"
+                    },
+                    {
+                        "name": "lastname",
+                        "value": "biswas"
+                    },
+                    {
+                        "name": "message",
+                        "value": "the website is very good"
+                    },
+                    {
+                        "name": "phoneNo",
+                        "value": "47488748984"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "0c0b5cf4-0655-4c51-8daa-a41e99df024e",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "update course progress",
+            "url": "http://localhost:4000/api/v1/course/updateCourseProgress",
+            "method": "POST",
+            "sortNum": 410000,
+            "created": "2023-12-17T06:22:46.618Z",
+            "modified": "2023-12-17T06:22:46.618Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "courseId",
+                        "value": "65480a41a9af052255265ea6"
+                    },
+                    {
+                        "name": "subSectionId",
+                        "value": "65480bc8a9af052255265ebf"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "59091cb6-74bd-4d00-bd3e-01654fa8687f",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "get course progress of the user",
+            "url": "http://localhost:4000/api/v1/course/getFullCourseDetails",
+            "method": "POST",
+            "sortNum": 420000,
+            "created": "2023-12-17T06:22:46.619Z",
+            "modified": "2023-12-17T06:22:46.619Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "courseId",
+                        "value": "65480a41a9af052255265ea6"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f8913db1-9353-4c67-b8e6-f4856c50bf2e",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "472fb0f9-5d68-49fb-9f28-54b2f11a4dcd",
+            "name": "get enrolled courses for the user",
+            "url": "http://localhost:4000/api/v1/profile/getEnrolledCourses",
+            "method": "GET",
+            "sortNum": 430000,
+            "created": "2023-12-17T06:22:46.620Z",
+            "modified": "2023-12-17T06:22:46.620Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4b57b5f3-9840-4f80-a11c-6089b6e36254",
+            "colId": "046c3a23-16bf-4589-9d1f-a6d19e22652b",
+            "containerId": "1db5b8b0-bad2-4f6e-87b8-1a09ee054fee",
+            "name": "getReview",
+            "url": "http://localhost:4000/api/v1/course/getReviews",
+            "method": "GET",
+            "sortNum": 440000,
+            "created": "2023-12-17T06:22:46.621Z",
+            "modified": "2023-12-17T06:22:46.621Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
