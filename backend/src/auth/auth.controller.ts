@@ -25,9 +25,9 @@ export class AuthController {
   }
 
   @Post('users/:email')
-  async updateUserRole(@Param('email') email: string, @Body() body: { role: string }) {
+  async updateUserRole(@Body() body: { role: string, email: string }) {
     try {
-      const updatedUser = await this.authService.updateUserRole(email, body.role);
+      const updatedUser = await this.authService.updateUserRole(body.email, body.role);
       console.log('updatedUser : ', updatedUser);
       return { message: 'Role updated successfully', user: updatedUser };
     } catch (error) {

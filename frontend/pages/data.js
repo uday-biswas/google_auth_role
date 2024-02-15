@@ -28,12 +28,12 @@ export default function RoleChooser() {
   const handleRoleSelection = async () => {
     try {
       // Make an API call to update the user's role in the backend
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/users/${details.email}`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/users`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ role: selectedRole }),
+        body: JSON.stringify({ role: selectedRole, email: details.email }),
       });
       const data = await response.json();
       localStorage.setItem("details", JSON.stringify(data.user));
