@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
-
+//data.js
 export default function RoleChooser() {
   const router = useRouter();
   const [details, setDetails] = useState(null);
