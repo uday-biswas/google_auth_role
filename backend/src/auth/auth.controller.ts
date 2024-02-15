@@ -24,7 +24,7 @@ export class AuthController {
     return { url: `${process.env.DB_FRONTEND}/data?details=${JSON.stringify(details)}` };
   }
 
-  @Post('users/:email')
+  @Post('users')
   async updateUserRole(@Body() body: { role: string, email: string }) {
     try {
       const updatedUser = await this.authService.updateUserRole(body.email, body.role);
