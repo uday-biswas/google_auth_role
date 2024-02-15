@@ -1,6 +1,6 @@
 import ProtectedRoute from '../components/ProtectedRoute';
 import { useEffect, useState } from 'react';
-
+//admin page
 const AdminPage = () => {
     const [categories, setCategories] = useState([]);
   const [editingCategory, setEditingCategory] = useState(null);
