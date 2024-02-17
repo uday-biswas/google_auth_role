@@ -12,8 +12,7 @@ export default function IndexPage() {
 
   function handleSignOut() {
     localStorage.removeItem("details");
-    // window.location.href = process.env.NEXT_PUBLIC_FRONTEND_URL;
-    router.push("/");
+    window.location.href = process.env.NEXT_PUBLIC_FRONTEND_URL;
   }
 
   function handleRole(role){
