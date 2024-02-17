@@ -4,13 +4,16 @@ import { FcGoogle } from "react-icons/fc";
 import { useRouter } from "next/router";
 import { use } from "passport";
 export default function IndexPage() {
+  
+  const router = useRouter();
   function handleSignIn() {
-    window.location.href = `${process.env.NEXT_PUBLIC_API_URL}/api/auth/google/login`;
+    router.push(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/google/login`);
   }
 
   function handleSignOut() {
     localStorage.removeItem("details");
-    window.location.href = process.env.NEXT_PUBLIC_FRONTEND_URL;
+    // window.location.href = process.env.NEXT_PUBLIC_FRONTEND_URL;
+    router.push("/");
   }
 
   function handleRole(role){
