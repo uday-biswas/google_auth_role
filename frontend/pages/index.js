@@ -14,7 +14,7 @@ export default function IndexPage() {
   }
 
   function handleRole(role){
-    window.location.href = process.env.NEXT_PUBLIC_FRONTEND_URL;
+    window.location.href = process.env.NEXT_PUBLIC_FRONTEND_URL + `/${role}`;
   }
 
   const [details, setDetails] = useState(null);
