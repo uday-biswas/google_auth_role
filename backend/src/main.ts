@@ -21,13 +21,13 @@ async function bootstrap() {
   app.use(passport.initialize());
   app.use(passport.session());
   const config = new DocumentBuilder()
-    .setTitle('Cats example')
-    .setDescription('The cats API description')
+    .setTitle('Google auth multiple roles')
+    .setDescription('The API description')
     .setVersion('1.0')
-    .addTag('cats')
+    .addTag('auth')
     .build();
   const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('api', app, document);
+  SwaggerModule.setup('swagger', app, document);
   await app.listen(4000);
 }
 bootstrap();
